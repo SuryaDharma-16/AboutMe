@@ -140,7 +140,6 @@ body {
   align-items: center;
   flex-wrap: wrap;
   min-height: 16vh;
-  max-height: fit-content;
 }
 
 #logo {
@@ -178,7 +177,7 @@ body {
 
 #menus {
   display: flex;
-  justify-content: stretch;
+  justify-content: start;
   align-items: center;
   flex-wrap: wrap;
   list-style: none;
