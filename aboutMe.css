@@ -1,0 +1,188 @@
+/* Variables */
+:root {
+  /* Main colors */
+  --primary-color: var(--blue-500);
+  --primary-color-hover: var(--blue-300);
+  --primary-color-active: var(--blue-600);
+  --secondary-color: var(--yellow-400);
+  --secondary-color-hover: var(--yellow-200);
+  --secondary-color-active: var(--yellow-500);
+  /* Grays */
+  --white: #ffffff;
+  --gray-50: #f6f6f6;
+  --gray-100: #e7e7e7;
+  --gray-200: #d1d1d1;
+  --gray-300: #b0b0b0;
+  --gray-400: #888888;
+  --gray-500: #6d6d6d;
+  --gray-600: #5d5d5d;
+  --gray-700: #4f4f4f;
+  --gray-800: #454545;
+  --gray-900: #3d3d3d;
+  --black: #000000;
+  /* Blue */
+  --blue-50: #e9ecff;
+  --blue-100: #d6dcff;
+  --blue-200: #b6beff;
+  --blue-300: #8992ff;
+  --blue-400: #605bff;
+  --blue-500: #4d36ff;
+  --blue-600: #4214ff;
+  --blue-700: #3d0af8;
+  --blue-800: #310cc7;
+  --blue-900: #2c149b;
+  --blue-950: #070317;
+  /* Yellow */
+  --yellow-50: #fcf8ea;
+  --yellow-100: #f9f0c8;
+  --yellow-200: #f4de94;
+  --yellow-300: #edc557;
+  --yellow-400: #e5ad2a;
+  --yellow-500: #db991d;
+  --yellow-600: #b87316;
+  --yellow-700: #935215;
+  --yellow-800: #7a4219;
+  --yellow-900: #68371b;
+  --yellow-950: #3d1c0b;
+  /* Tokens */
+  --surface-primary: var(--gray-50);
+  --surface-secondary: var(--gray-100);
+  --button-primary: var(--primary-color);
+  --button-primary-hover: var(--primary-color-hover);
+  --button-primary-active: var(--primary-color-active);
+  --button-label-primary: var(--gray-100);
+  --text-primary: var(--blue-950);
+  --text-primary-hover: var(--blue-500);
+  --text-primary-active: var(--blue-700);
+  --text-secondary: var(--gray-500);
+  --radius-xs: border-radius 4px;
+  --radius-s: border-radius 8px;
+  --radius-md: border-radius 12px;
+  --radius-lg: border-radius 18px;
+  --radius-xl: border-radius 24px;
+  /* Typography */
+  --h1: 2.986rem;
+  --h2: 2.488rem;
+  --h3: 2.074rem;
+  --h4: 1.728rem;
+  --h5: 1.44rem;
+  --h6: 1.2rem;
+  --body-text: 1rem;
+  --small-text: 0.833rem;
+  --tiny-text: 0.694rem;
+  /* Spacing */
+  --spacing-4: 4rem;
+  --spacing-8: 8rem;
+  --spacing-12: 12rem;
+  --spacing-16: 16rem;
+  --spacing-24: 24rem;
+  --spacing-32: 32rem;
+  --spacing-48: 48rem;
+  --spacing-64: 64rem;
+  --spacing-72: 72rem;
+  --spacing-96: 96rem;
+}
+
+h1 {
+  font-size: var(--h1);
+}
+
+h2 {
+  font-size: var(--h2);
+}
+
+h3 {
+  font-size: var(--h3);
+}
+
+h4 {
+  font-size: var(--h4);
+}
+
+h5 {
+  font-size: var(--h5);
+}
+
+h6 {
+  font-size: var(--h6);
+}
+
+p {
+  font-size: var(--body-text);
+}
+
+/* Styling starts here */
+* {
+  font-family: "Lexend Deca", sans-serif;
+  margin: 0;
+}
+
+html {
+  padding: 0px 8vw;
+  background-color: var(--white);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+#navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#logo-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  column-gap: 16px;
+}
+
+#logo {
+  text-decoration: none;
+}
+
+#foto-website {
+  width: 48px;
+  height: 48px;
+}
+
+#logo-text {
+  color: var(--text-primary);
+}
+
+#menus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  list-style: none;
+}
+
+.menu {
+  color: var(--text-primary);
+  text-decoration: none;
+  text-align: center;
+  padding: 0px 1vw;
+}
+
+.menu:hover {
+  color: var(--text-primary-hover);
+  font-size: var(--body-text);
+  text-decoration: none;
+  padding: 4px 8px;
+}
+
+.menu:active {
+  color: var(--text-primary-active);
+  font-size: var(--body-text);
+  text-decoration: none;
+  padding: 4px 8px;
+}
